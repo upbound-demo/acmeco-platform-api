@@ -13,5 +13,5 @@ spec:
   maintainer: Upbound <support@upbound.io>
   readme: |
     This is a demo project for a fictional Acme Co platform
-  repository: xpkg.upbound.io/acmeco/test-platform-api
+  repository: xpkg.dev-deba7a0e.u6d.dev/upbound/test-platform-api
   source: github.com/upbound/project-template
