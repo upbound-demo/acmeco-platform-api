@@ -1,0 +1,19 @@
+name: Build and Deploy up Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run upbound Project Action
+        uses: upbound/up-project-action@v1
+        with:
+          channel: 'stable'                # Optional, default is 'stable'
+          version: 'current'               # Optional, default is 'current'
+          up_token: ${{ secrets.up_TOKEN }}  # Required, upbound API token
+          endpoint: 'https://private-cli.upbound.io' # Optional, default is 'https://cli.upbound.io'
