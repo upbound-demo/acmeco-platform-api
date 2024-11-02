@@ -13,7 +13,7 @@ jobs:
       - name: Run upbound Project Action
         uses: upbound/up-project-action@v1
         with:
-          channel: 'stable'                # Optional, default is 'stable'
+          channel: 'main'                # Optional, default is 'stable'
           version: 'current'               # Optional, default is 'current'
           up_token: ${{ secrets.up_TOKEN }}  # Required, upbound API token
           endpoint: 'https://private-cli.upbound.io' # Optional, default is 'https://cli.upbound.io'
